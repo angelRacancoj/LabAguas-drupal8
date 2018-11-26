@@ -1,0 +1,87 @@
+insumo.add_insumo:
+  path: 'add-insumo'
+  defaults:
+    _form: '\Drupal\insumo\Form\addInsumo'
+    _title: 'Agregar insumo'
+  requirements:
+    _permission: 'access content'
+
+insumo.add_personal:
+  path: 'add-personal'
+  defaults:
+    _form: '\Drupal\insumo\Form\addPersonal'
+    _title: 'Agregar a Personal'
+  requirements:
+    _permission: 'access content'
+
+insumo.add_cargo:
+  path: 'add-cargo'
+  defaults:
+    _form: '\Drupal\insumo\Form\addCargo'
+    _title: 'Agregar cargo'
+  requirements:
+    _permission: 'access content'
+
+insumo.add_limpieza:
+  path: 'add-limpieza'
+  defaults:
+    _form: '\Drupal\insumo\Form\addLimpieza'
+    _title: 'Agregar limpieza'
+  requirements:
+    _permission: 'access content'
+
+insumo.do_limpieza:
+  path: 'do-limpieza'
+  defaults:
+    _form: '\Drupal\insumo\Form\doLimpieza'
+    _title: 'Realizar limpieza'
+  requirements:
+    _permission: 'access content'
+
+insumo.store_insumo:
+  path: 'store-insumo'
+  defaults:
+    _form: '\Drupal\insumo\Controller\storeInsumo'
+    _title: 'Almacenar insumo'
+  requirements:
+    _permission: 'access content'
+
+insumo.store_cargo:
+  path: 'delete-cargo'
+  defaults:
+    _form: '\Drupal\insumo\Controller\deleteCargo'
+    _title: 'Consulta Cargos'
+  requirements:
+    _permission: 'access content'
+
+insumo.delete_insumo:
+  path: 'delete-insumo'
+  defaults:
+    _form: '\Drupal\insumo\Controller\deleteInsumo'
+    _title: 'Consulta Insumos'
+  requirements:
+    _permission: 'access content'
+
+insumo.delete_personal:
+  path: 'delete-personal'
+  defaults:
+    _form: '\Drupal\insumo\Controller\deletePersonal'
+    _title: 'Consulta Personal'
+  requirements:
+    _permission: 'access content'
+
+insumo.delete_limpieza:
+  path: 'delete-limpieza'
+  defaults:
+    _form: '\Drupal\insumo\Controller\deleteLimpieza'
+    _title: 'Consulta Limpieza'
+  requirements:
+    _permission: 'access content'
+
+insumo.delete_done_limpieza:
+  path: 'delete-clean'
+  defaults:
+    _form: '\Drupal\insumo\Controller\deleteDoneClean'
+    _title: 'Consulta Limpieza Realizada'
+  requirements:
+    _permission: 'access content'
